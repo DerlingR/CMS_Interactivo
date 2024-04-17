@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CMS - Contenido</title>
+  <link rel="stylesheet" href="contenido.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Gestor de Contenido</h1>
+    <form id="content-form">
+      <div class="form-group">
+        <label for="title">Título:</label>
+        <input type="text" id="title" name="title" required>
+      </div>
+      <div class="form-group">
+        <label for="category">Categoría:</label>
+        <select id="category" name="category" required>
+          <option value="">Selecciona una categoría</option>
+          <option value="category1">Categoría 1</option>
+          <option value="category2">Categoría 2</option>
+          <option value="category3">Categoría 3</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="content">Contenido:</label>
+        <textarea id="content" name="content" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="visibility">Visibilidad:</label>
+        <select id="visibility" name="visibility" required>
+          <option value="public">Público</option>
+          <option value="private">Privado</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <button type="submit" id="save-btn">Guardar</button>
+        <button type="button" id="delete-btn">Eliminar</button>
+      </div>
+      <div class="form-group">
+        <p id="approval-status" class="approval-status">Contenido en espera de aprobación</p>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

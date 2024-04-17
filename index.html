@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMS Interactivo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">CMS Interactivo</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="#"><i class="fas fa-folder"></i> Contenido</a></li>
+                <li><a href="#"><i class="fas fa-tags"></i> Categorías</a></li>
+                <li><a href="Cpanel.html"><i class="fas fa-cog"></i> Panel de Control</a></li>
+            </ul>
+            <div class="user-info">
+                <span class="welcome-message">Bienvenido, Derling</span>
+                <div class="user-icon">
+                    <i class="fas fa-user"></i>
+                </div>
+                <button class="logout-button">
+                    <i class="fas fa-sign-out-alt"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="content-management">
+            <h2><i class="fas fa-edit"></i> Gestión de Contenido</h2>
+            <div class="content-filters">
+                <input type="text" placeholder="Buscar contenido..." class="search-input">
+                <select class="filter-select">
+                    <option value="">Filtrar por categoría</option>
+                    <option value="tecnologia">Tecnología</option>
+                    <option value="diseno">Diseño</option>
+                    <option value="programacion">Programación</option>
+                </select>
+            </div>
+            <div class="content-list">
+                <div class="content-item">
+                    <div class="content-preview">
+                        <h3>Cómo crear una aplicación web con React</h3>
+                        <p>En este tutorial, aprenderás a construir una aplicación web moderna utilizando la biblioteca de JavaScript React. Cubriremos los conceptos básicos, la configuración del entorno de desarrollo y la creación de componentes reutilizables.</p>
+                    </div>
+                    <div class="content-actions">
+                        <button class="action-button edit-button"><i class="fas fa-pencil-alt"></i> Editar</button>
+                        <button class="action-button delete-button"><i class="fas fa-trash"></i> Eliminar</button>
+                    </div>
+                    <div class="content-comments">
+                        <h4>Comentarios</h4>
+                        <ul class="comment-list">
+                            <li>
+                                <div class="comment-header">
+                                    <div class="comment-author">
+                                        <i class="fas fa-user"></i> Juan Pérez
+                                    </div>
+                                    <div class="comment-date">
+                                        2024-04-05
+                                    </div>
+                                </div>
+                                <div class="comment-body">
+                                    ¡Excelente tutorial! Muy bien explicado y fácil de seguir.
+                                </div>
+                            </li>
+                        </ul>
+                        <form class="comment-form">
+                            <textarea placeholder="Escribe un comentario..." class="comment-input"></textarea>
+                            <button type="submit" class="comment-submit">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="content-item">
+                    <div class="content-preview">
+                        <h3>Diseño responsivo con CSS moderno</h3>
+                        <p>Descubre las últimas técnicas y mejores prácticas para crear diseños web responsivos que se adapten a diferentes dispositivos y tamaños de pantalla. Exploraremos conceptos como Flexbox, Grid y consultas de medios.</p>
+                    </div>
+                    <div class="content-actions">
+                        <button class="action-button edit-button"><i class="fas fa-pencil-alt"></i> Editar</button>
+                        <button class="action-button delete-button"><i class="fas fa-trash"></i> Eliminar</button>
+                    </div>
+                    <div class="content-comments">
+                        <h4>Comentarios</h4>
+                        <ul class="comment-list">
+                            <li>
+                                <div class="comment-header">
+                                    <div class="comment-author">
+                                        <i class="fas fa-user"></i> María González
+                                    </div>
+                                    <div class="comment-date">
+                                        2024-04-10
+                                    </div>
+                                </div>
+                                <div class="comment-body">
+                                    Gracias por este excelente artículo. Me ha ayudado a comprender mejor el diseño responsivo.
+                                </div>
+                            </li>
+                        </ul>
+                        <form class="comment-form">
+                            <textarea placeholder="Escribe un comentario..." class="comment-input"></textarea>
+                            <button type="submit" class="comment-submit">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="content-item">
+                    <div class="content-preview">
+                        <h3>Introducción a la programación en Python</h3>
+                        <p>En este artículo, aprenderás los conceptos básicos de la programación en Python. Cubriremos variables, tipos de datos, estructuras de control y funciones. Ideal para principiantes en el mundo de la programación.</p>
+                    </div>
+                    <div class="content-actions">
+                        <button class="action-button edit-button"><i class="fas fa-pencil-alt"></i> Editar</button>
+                        <button class="action-button delete-button"><i class="fas fa-trash"></i> Eliminar</button>
+                    </div>
+                    <div class="content-comments">
+                        <h4>Comentarios</h4>
+                        <ul class="comment-list">
+                            <li>
+                                <div class="comment-header">
+                                    <div class="comment-author">
+                                        <i class="fas fa-user"></i> Luisa Ramírez
+                                    </div>
+                                    <div class="comment-date">
+                                        2024-04-15
+                                    </div>
+                                </div>
+                                <div class="comment-body">
+                                    ¡Gracias por este excelente tutorial de Python! Me ha ayudado mucho a comenzar con la programación.
+                                </div>
+                            </li>
+                        </ul>
+                        <form class="comment-form">
+                            <textarea placeholder="Escribe un comentario..." class="comment-input"></textarea>
+                            <button type="submit" class="comment-submit">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="content-item">
+                    <div class="content-preview">
+                        <h3>Diseño de interfaces de usuario con Figma</h3>
+                        <p>Aprende a utilizar la herramienta de diseño Figma para crear interfaces de usuario atractivas y funcionales. Cubriremos desde los conceptos básicos hasta técnicas avanzadas de prototipado y colaboración.</p>
+                    </div>
+                    <div class="content-actions">
+                        <button class="action-button edit-button"><i class="fas fa-pencil-alt"></i> Editar</button>
+                        <button class="action-button delete-button"><i class="fas fa-trash"></i> Eliminar</button>
+                    </div>
+                    <div class="content-comments">
+                        <h4>Comentarios</h4>
+                        <ul class="comment-list">
+                            <li>
+                                <div class="comment-header">
+                                    <div class="comment-author">
+                                        <i class="fas fa-user"></i> Pedro Gómez
+                                    </div>
+                                    <div class="comment-date">
+                                        2024-04-17
+                                    </div>
+                                </div>
+                                <div class="comment-body">
+                                    ¡Excelente artículo sobre Figma! Me ha ayudado a mejorar mis habilidades de diseño de UI.
+                                </div>
+                            </li>
+                        </ul>
+                        <form class="comment-form">
+                            <textarea placeholder="Escribe un comentario..." class="comment-input"></textarea>
+                            <button type="submit" class="comment-submit">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="create-content">
+                <i class="fas fa-plus-circle"></i> Crear nuevo contenido
+            </a>
+        </section>
+        <section class="categories">
+            <h2><i class="fas fa-tags"></i> Categorías</h2>
+            <ul class="category-list">
+                <li><a href="#">General</a></li>
+                <li><a href="#">Tecnología</a></li>
+                <li><a href="#">Deportes</a></li>
+                <li><a href="#">Arte y Cultura</a></li>
+                <li><a href="#">Entretenimiento</a></li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
